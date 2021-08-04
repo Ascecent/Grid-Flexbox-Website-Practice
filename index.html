@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome Kit -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Lato Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize styles -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <!-- Utilities styles -->
+    <link rel="stylesheet" href="styles/utilities.css" />
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <title>Loruki | Cloud Hosting for Everyone</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION BEGIN -->
+    <header class="header">
+      <!-- Wrapper container -->
+      <div class="wrapper__container flex-container">
+        <!-- Logo -->
+        <h1 class="header__logo">Loruki.</h1>
+
+        <!-- Navbar -->
+        <nav class="header__navbar">
+          <!-- Navbar elements -->
+          <ul class="navbar__list flex-container">
+            <li class="list__item">
+              <a href="index.html" class="item__link">Home</a>
+            </li>
+            <li class="list__item">
+              <a href="views/features.html" class="item__link">Features</a>
+            </li>
+            <li class="list__item">
+              <a href="views/docs.html" class="item__link">Docs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MAIN SECTION BEGIN -->
+
+    <main class="main">
+      <!-- Showcase section -->
+      <section class="main__showcase">
+        <div class="wrapper__container grid-container">
+          <!-- Showcase description -->
+          <article class="showcase__text">
+            <h2 class="text__heading section__heading">Easier Deployment</h2>
+
+            <p class="text__description my-1">
+              Deploy web apps of all kinds, from large scale enterprise APIs to
+              static websites for individuals. Fill out the form to try a demo
+              of our platform
+            </p>
+
+            <a href="views/features.html" class="btn btn--outline">Read More</a>
+          </article>
+
+          <!-- Showcase form -->
+          <article class="showcase__form card">
+            <h2 class="form__heading">Request a Demo</h2>
+
+            <form class="demo-form">
+              <input
+                type="text"
+                class="demo-form__input"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="text"
+                class="demo-form__input"
+                name="companyName"
+                placeholder="Company Name"
+                required
+              />
+              <input
+                type="email"
+                class="demo-form__input"
+                name="email"
+                placeholder="Email"
+                required
+              />
+
+              <button type="submit" class="btn primary-btn">Send</button>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <!-- Stats section -->
+      <section class="main__stats">
+        <div class="wrapper__container">
+          <h2 class="stats__heading text-center my-1 section__heading">
+            Welcome to the best platform for building applications of all types
+            with modern architecture and scaling
+          </h2>
+
+          <div class="stats__graphs grid-container grid-3-c text-center my-4">
+            <!-- Stat item #1 -->
+            <div class="graphs__item">
+              <span class="fas fa-server fa-3x"></span>
+              <h3 class="item__heading">10,349,405</h3>
+              <p class="item__description text-secondary">Deployments</p>
+            </div>
+
+            <!-- Stat item #2 -->
+            <div class="graphs__item">
+              <span class="fas fa-upload fa-3x"></span>
+              <h3 class="item__heading">900 TB</h3>
+              <p class="item__description text-secondary">Published</p>
+            </div>
+
+            <!-- Stat item #3 -->
+            <div class="graphs__item">
+              <span class="fas fa-project-diagram fa-3x"></span>
+              <h3 class="item__heading">2,343,265 M</h3>
+              <p class="item__description text-secondary">Projects</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLI section -->
+      <section class="main__cli">
+        <div class="cli__items grid-container wrapper__container">
+          <img class="cli__image" src="images/cli_install.png" alt="CLI" />
+
+          <div class="cli__item card cli__item1">
+            <h3 class="text-center">Easy to use, cross platform CLI</h3>
+          </div>
+
+          <div class="cli__item card clie__item2">
+            <h3 class="text-center">Deploy in seconds</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cloud section -->
+      <section class="main__cloud py-2 my-2">
+        <div class="cloud__items wrapper__container grid-container">
+          <div class="text-center">
+            <h2 class="cloud__heading section__heading">
+              Extreme Cloud Hosting
+            </h2>
+            <p class="my-1 cloud__description">
+              Cloud hosting like you've never seen. Fast, efficient and scalable
+            </p>
+            <a href="views/features.html" class="btn btn-dark">Read More</a>
+          </div>
+
+          <img src="images/cloud.png" alt="Cloud" class="cloud__image" />
+        </div>
+      </section>
+
+      <!-- Supported languages section -->
+      <section class="main__languages my-2 py-2">
+        <h2 class="languages__heading text-center section__heading my-2">
+          Supported Languages
+        </h2>
+        <div class="flex-container wrapper__container">
+          <!-- Language Item #1 -->
+          <div class="language__item card">
+            <h4 class="language__heading text-center">Node.js</h4>
+            <img
+              src="images/logos/node.png"
+              alt="Node.js"
+              class="language__image"
+            />
+          </div>
+
+          <!-- Language Item #2 -->
+          <div class="language__item card">
+            <h4 class="language__heading text-center">Python</h4>
+            <img
+              src="images/logos/python.png"
+              alt="Python"
+              class="language__image"
+            />
+          </div>
+
+          <!-- Language Item #3 -->
+          <div class="language__item card">
+            <h4 class="language__heading text-center">C#</h4>
+            <img
+              src="images/logos/csharp.png"
+              alt="C#"
+              class="language__image"
+            />
+          </div>
+
+          <!-- Language Item #4 -->
+          <div class="language__item card">
+            <h4 class="language__heading text-center">Ruby</h4>
+            <img
+              src="images/logos/ruby.png"
+              alt="Ruby"
+              class="language__image"
+            />
+          </div>
+
+          <!-- Language Item #5 -->
+          <div class="language__item card">
+            <h4 class="language__heading text-center">PHP</h4>
+            <img src="images/logos/php.png" alt="PHP" class="language__image" />
+          </div>
+
+          <!-- Language Item #6 -->
+          <div class="language__item card">
+            <h4 class="language__heading text-center">Scala</h4>
+            <img
+              src="images/logos/scala.png"
+              alt="Scala"
+              class="language__image"
+            />
+          </div>
+
+          <!-- Language Item #7 -->
+          <div class="language__item card">
+            <h4 class="language__heading text-center">Clojure</h4>
+            <img
+              src="images/logos/clojure.png"
+              alt="Clojure"
+              class="language__image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER SECTION BEGIN -->
+    <footer class="footer py-4">
+      <div class="wrapper__container grid-container grid-3-c">
+        <div class="footer__item footer__entreprise">
+          <p class="enterprise__heading">Loruki.</p>
+          <p class="enterprise__copyright">Copyright &copy; 2021</p>
+        </div>
+
+        <nav class="footer__item footer__navbar">
+          <ul>
+            <li><a class="navbar__link" href="index.html">Home</a></li>
+            <li><a class="navbar__link" href="views/features.html">Features</a></li>
+            <li><a class="navbar__link" href="views/docs.html">Docs</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__item footer__social">
+          <a href="" class="social__link"><span class="fab fa-facebook fa-2x"></span></a>
+          <a href="" class="social__link"><span class="fab fa-twitter fa-2x"></span></a>
+          <a href="" class="social__link"><span class="fab fa-github fa-2x"></span></a>
+          <a href="" class="social__link"><span class="fab fa-instagram fa-2x"></span></a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+  </body>
+</html>

@@ -1,0 +1,116 @@
+@import url(settings.css);
+
+/*=========================
+=== MAIN SECTION STYLES ===
+===========================*/
+
+/* Showcase section */
+
+.main__showcase {
+  background-color: var(--light-blue);
+  color: var(--white);
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.main__showcase::before {
+  content: "";
+  position: absolute;
+  bottom: -4.5rem;
+  height: 6rem;
+  width: 100%;
+  background-image: url(../images/wave-bg.png);
+  background-color: var(--light-blue);
+}
+
+.main__showcase .grid-container {
+  grid-template-columns: 55% auto;
+  gap: 2rem;
+  overflow: visible;
+}
+
+.showcase__form {
+  position: relative;
+  top: 4rem;
+  width: 25rem;
+  padding: 2rem;
+}
+
+.demo-form__input {
+  margin: 1rem 0;
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+.demo-form__input:focus {
+  outline: none;
+}
+
+/* Stats section */
+
+.graphs__item {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 15rem;
+}
+
+.item__heading {
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.item__description {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* CLI section */
+.cli__items {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli__image {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.cli__item {
+  width: 100%;
+}
+
+/* Cloud section */
+
+.main__cloud {
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+.cloud__description {
+  font-size: 1.2rem;
+}
+
+/* Languages section */
+
+.main__languages .flex-container {
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.main__languages .card {
+  transition: transform 0.2s ease-in;
+}
+
+.language__item {
+  margin: 1rem .5rem 2.5rem;
+}
+
+.main__languages .card:hover {
+  transform: translateY(-1rem);
+}
+
+.language__heading {
+  margin-bottom: 1rem;
+}
