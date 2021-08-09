@@ -1,5 +1,11 @@
 @import url(settings.css);
 
+/* Form antispam netlify */
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
 /* Objects */
 .section__heading {
   font-size: clamp(1.5rem, 5vw, 2.5rem);

@@ -88,7 +88,19 @@
           <article class="showcase__form card">
             <h2 class="form__heading">Request a Demo</h2>
 
-            <form class="demo-form">
+            <form
+              name="contact"
+              method="post"
+              class="demo-form"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="contact" name="form-name" />
+              <p class="hidden">
+                <label
+                  >Don’t fill this out if you’re human: <input name="bot-field"
+                /></label>
+              </p>
               <input
                 type="text"
                 class="demo-form__input"
@@ -261,7 +273,7 @@
     <!-- FOOTER SECTION BEGIN -->
     <footer class="footer bg-secondary py-4">
       <div class="wrapper__container grid-container grid-3-c">
-        <div class="footer__item footer__entreprise">
+        <div class="footer__item footer__enterprise">
           <p class="enterprise__heading">Loruki.</p>
           <p class="enterprise__copyright">Copyright &copy; 2021</p>
         </div>
