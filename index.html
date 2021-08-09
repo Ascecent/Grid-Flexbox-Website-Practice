@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
     <!-- Font Awesome Kit -->
     <link
       rel="stylesheet"
@@ -22,19 +25,22 @@
     />
 
     <!-- Normalize styles -->
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/general/normalize.css" />
 
     <!-- Utilities styles -->
-    <link rel="stylesheet" href="styles/utilities.css" />
+    <link rel="stylesheet" href="styles/general/utilities.css" />
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/pages/index.css" />
+
+    <!-- Media queries -->
+    <link rel="stylesheet" href="styles/general/queries.css" />
 
     <title>Loruki | Cloud Hosting for Everyone</title>
   </head>
   <body>
     <!-- HEADER SECTION BEGIN -->
-    <header class="header">
+    <header class="header bg-primary py-1">
       <!-- Wrapper container -->
       <div class="wrapper__container flex-container">
         <!-- Logo -->
@@ -63,13 +69,13 @@
 
     <main class="main">
       <!-- Showcase section -->
-      <section class="main__showcase">
+      <section class="main__showcase bg-primary py-2">
         <div class="wrapper__container grid-container">
           <!-- Showcase description -->
-          <article class="showcase__text">
-            <h2 class="text__heading section__heading">Easier Deployment</h2>
+          <article class="showcase__text pirmary-text">
+            <h2 class="text__heading primary-heading">Easier Deployment</h2>
 
-            <p class="text__description my-1">
+            <p class="text__description my-1 primary-description">
               Deploy web apps of all kinds, from large scale enterprise APIs to
               static websites for individuals. Fill out the form to try a demo
               of our platform
@@ -153,14 +159,14 @@
             <h3 class="text-center">Easy to use, cross platform CLI</h3>
           </div>
 
-          <div class="cli__item card clie__item2">
+          <div class="cli__item card cli__item2">
             <h3 class="text-center">Deploy in seconds</h3>
           </div>
         </div>
       </section>
 
       <!-- Cloud section -->
-      <section class="main__cloud py-2 my-2">
+      <section class="main__cloud bg-primary py-2 my-2">
         <div class="cloud__items wrapper__container grid-container">
           <div class="text-center">
             <h2 class="cloud__heading section__heading">
@@ -253,7 +259,7 @@
     <!-- MAIN SECTION END -->
 
     <!-- FOOTER SECTION BEGIN -->
-    <footer class="footer py-4">
+    <footer class="footer bg-secondary py-4">
       <div class="wrapper__container grid-container grid-3-c">
         <div class="footer__item footer__entreprise">
           <p class="enterprise__heading">Loruki.</p>
@@ -263,16 +269,26 @@
         <nav class="footer__item footer__navbar">
           <ul>
             <li><a class="navbar__link" href="index.html">Home</a></li>
-            <li><a class="navbar__link" href="views/features.html">Features</a></li>
+            <li>
+              <a class="navbar__link" href="views/features.html">Features</a>
+            </li>
             <li><a class="navbar__link" href="views/docs.html">Docs</a></li>
           </ul>
         </nav>
 
         <div class="footer__item footer__social">
-          <a href="" class="social__link"><span class="fab fa-facebook fa-2x"></span></a>
-          <a href="" class="social__link"><span class="fab fa-twitter fa-2x"></span></a>
-          <a href="" class="social__link"><span class="fab fa-github fa-2x"></span></a>
-          <a href="" class="social__link"><span class="fab fa-instagram fa-2x"></span></a>
+          <a href="" class="social__link"
+            ><span class="fab fa-facebook fa-2x"></span
+          ></a>
+          <a href="" class="social__link"
+            ><span class="fab fa-twitter fa-2x"></span
+          ></a>
+          <a href="" class="social__link"
+            ><span class="fab fa-github fa-2x"></span
+          ></a>
+          <a href="" class="social__link"
+            ><span class="fab fa-instagram fa-2x"></span
+          ></a>
         </div>
       </div>
     </footer>

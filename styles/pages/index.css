@@ -1,4 +1,4 @@
-@import url(settings.css);
+@import url(../general/settings.css);
 
 /*=========================
 === MAIN SECTION STYLES ===
@@ -7,8 +7,6 @@
 /* Showcase section */
 
 .main__showcase {
-  background-color: var(--light-blue);
-  color: var(--white);
   position: relative;
   margin-bottom: 10rem;
 }
@@ -17,23 +15,23 @@
   content: "";
   position: absolute;
   bottom: -4.5rem;
+  left: 0;
   height: 6rem;
   width: 100%;
-  background-image: url(../images/wave-bg.png);
-  background-color: var(--light-blue);
+  background: url(../../images/wave-bg.png) var(--light-blue);
 }
 
-.main__showcase .grid-container {
-  grid-template-columns: 55% auto;
-  gap: 2rem;
-  overflow: visible;
+.showcase__text {
+  animation: slideInFromLeft 1s ease-in;
 }
 
 .showcase__form {
   position: relative;
-  top: 4rem;
-  width: 25rem;
+  top: 7rem;
+  max-width: 25rem;
+  min-width: 10rem;
   padding: 2rem;
+  animation: slideInFromRight 1s ease-in;
 }
 
 .demo-form__input {
@@ -68,8 +66,7 @@
 
 /* CLI section */
 .cli__items {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 }
 
 .cli__image {
@@ -82,11 +79,6 @@
 }
 
 /* Cloud section */
-
-.main__cloud {
-  background-color: var(--light-blue);
-  color: var(--white);
-}
 
 .cloud__description {
   font-size: 1.2rem;
@@ -103,12 +95,12 @@
   transition: transform 0.2s ease-in;
 }
 
-.language__item {
-  margin: 1rem .5rem 2.5rem;
-}
-
 .main__languages .card:hover {
   transform: translateY(-1rem);
+}
+
+.language__item {
+  margin: 1rem 0.5rem 2.5rem;
 }
 
 .language__heading {

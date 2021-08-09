@@ -1,0 +1,31 @@
+@import url(../general/settings.css);
+
+/*=========================
+=== MAIN SECTION STYLES ===
+===========================*/
+
+.documentation__item {
+  width: 100%;
+}
+
+.doc-list__item {
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.doc-list__item a {
+  color: var(--gray);
+}
+
+.doc-list__item a:hover {
+  font-weight: bold;
+}
+
+.section__code {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 1rem;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome Kit -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Lato Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize styles -->
+    <link rel="stylesheet" href="../styles/general/normalize.css" />
+
+    <!-- Utilities styles -->
+    <link rel="stylesheet" href="../styles/general/utilities.css" />
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="../styles/pages/docs.css" />
+
+    <!-- Media queries -->
+    <link rel="stylesheet" href="../styles/general/queries.css" />
+
+    <title>Loruki | Cloud Hosting for Everyone</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION BEGIN -->
+    <header class="header bg-primary py-1">
+      <!-- Wrapper container -->
+      <div class="wrapper__container flex-container">
+        <!-- Logo -->
+        <h1 class="header__logo">Loruki.</h1>
+
+        <!-- Navbar -->
+        <nav class="header__navbar">
+          <!-- Navbar elements -->
+          <ul class="navbar__list flex-container">
+            <li class="list__item">
+              <a href="../index.html" class="item__link">Home</a>
+            </li>
+            <li class="list__item">
+              <a href="features.html" class="item__link">Features</a>
+            </li>
+            <li class="list__item">
+              <a href="docs.html" class="item__link">Docs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MAIN SECTION BEGIN -->
+    <main class="main">
+      <section class="main__docs py-2 bg-primary">
+        <div class="wrapper__container grid-container">
+          <div class="docs__text primary-text">
+            <h2 class="text__heading primary-heading">Docs</h2>
+            <p class="docs__description primary-description">
+              Learn how to work with the Loruki platform
+            </p>
+          </div>
+          <img
+            src="../images/docs.png"
+            alt="Document image"
+            class="docs__image section-image primary-image"
+          />
+        </div>
+      </section>
+
+      <section class="main__documentation my-4">
+        <div class="wrapper__container grid-container grid-doc-layout">
+          <div
+            class="documentation__item card documentation__item-1 bg-light p-2"
+          >
+            <h3 class="my-1">Essentials</h3>
+            <nav class="item__navbar">
+              <ul class="navbar__list">
+                <li class="doc-list__item"><a href="#">About Loruki</a></li>
+                <li class="doc-list__item"><a href="#">Instalation</a></li>
+                <li class="doc-list__item"><a href="#">Introduction</a></li>
+              </ul>
+            </nav>
+
+            <h3 class="my-1">Deployment</h3>
+            <nav class="item__navbar">
+              <ul class="navbar__list">
+                <li class="doc-list__item">
+                  <a href="#">Setting up a container</a>
+                </li>
+                <li class="doc-list__item"><a href="#">Using the CLI</a></li>
+                <li class="doc-list__item">
+                  <a href="#">Managing resources</a>
+                </li>
+                <li class="doc-list__item">
+                  <a href="#">Upgrade & downgrade</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="card documentation__item documentation__item-2 p-2">
+            <div class="item__section">
+              <h3 class="item__heading my-1">Introducion</h3>
+              <p class="item__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                exercitationem a. Reprehenderit laudantium, sequi pariatur non
+                architecto iure nam deleniti, in odit, optio quis corporis.
+                Dignissimos perferendis eaque dolorem asperiores.
+              </p>
+              <div class="alert alert-success">
+                <p class="alert__description">
+                  <span class="fas fa-info"></span>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Perferendis, odio.
+                </p>
+              </div>
+            </div>
+
+            <div class="item__section">
+              <h3 class="item__heading my-1">Lorem, ipsum dolor.</h3>
+              <p class="item__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis harum eos odio tempore cupiditate enim mollitia
+                veritatis corrupti doloremque vel?
+              </p>
+              <a href="#" class="btn primary-btn">Install CLI</a>
+            </div>
+
+            <div class="item__section">
+              <h3 class="item__heading my-1">Requirements</h3>
+              <ul class="section__requirements">
+                <li>Windows 10, MacOSX, Linux</li>
+                <li>Node.js v12 or higher</li>
+              </ul>
+            </div>
+
+            <div class="item__section">
+              <h3 class="item__heading my-1">Install</h3>
+              <p class="item__paragraph">Mac (Homebrew)</p>
+              <pre
+                class="section__code"
+              ><code>$ brew install loruki-cli</code></pre>
+              <p class="item__paragraph">NPM</p>
+              <pre
+                class="section__code"
+              ><code>$ npm install loruki-cli</code></pre>
+              <p class="item__paragraph">Yarn</p>
+              <pre
+                class="section__code"
+              ><code>$ yarn install loruki-cli</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- MAIN SECTION END -->
+
+    <!-- FOOTER SECTION BEGIN -->
+    <footer class="footer bg-secondary py-4">
+      <div class="wrapper__container grid-container grid-3-c">
+        <div class="footer__item footer__enterprise">
+          <p class="enterprise__heading">Loruki.</p>
+          <p class="enterprise__copyright">Copyright &copy; 2021</p>
+        </div>
+
+        <nav class="footer__item footer__navbar">
+          <ul>
+            <li><a class="navbar__link" href="index.html">Home</a></li>
+            <li>
+              <a class="navbar__link" href="views/features.html">Features</a>
+            </li>
+            <li><a class="navbar__link" href="views/docs.html">Docs</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__item footer__social">
+          <a href="" class="social__link"
+            ><span class="fab fa-facebook fa-2x"></span
+          ></a>
+          <a href="" class="social__link"
+            ><span class="fab fa-twitter fa-2x"></span
+          ></a>
+          <a href="" class="social__link"
+            ><span class="fab fa-github fa-2x"></span
+          ></a>
+          <a href="" class="social__link"
+            ><span class="fab fa-instagram fa-2x"></span
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+  </body>
+</html>

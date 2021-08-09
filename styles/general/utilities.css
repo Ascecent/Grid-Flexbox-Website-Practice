@@ -1,7 +1,6 @@
 @import url(settings.css);
 
 /* Objects */
-
 .section__heading {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: bold;
@@ -17,14 +16,25 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   place-items: center;
   height: 100%;
+}
+
+/* A layout for the documentation page */
+.grid-doc-layout {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
 }
 
 /* 3 even columns grid */
 .grid-3-c {
   grid-template-columns: repeat(3, 1fr);
+}
+
+/* 3 grid rows and colums */
+.grid-3c-3r {
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
 .wrapper__container {
@@ -68,7 +78,6 @@
 }
 
 .primary-btn {
-  margin-top: 1rem;
   background-color: var(--light-blue);
 }
 
@@ -88,9 +97,21 @@
   outline: 1px solid currentColor;
 }
 
-/* Text alignment */
+/* Text utilities */
 .text-center {
   text-align: center;
+}
+
+.primary-text {
+  justify-self: start;
+}
+
+.primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.primary-description {
+  font-size: 1.2rem;
 }
 
 /* Margin utilities */
@@ -110,6 +131,23 @@
   margin: 4rem 0;
 }
 
+/* Padding utilities */
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -126,8 +164,42 @@
   padding: 4rem 0;
 }
 
-.text-secondary {
-  color: var(--dark-blue);
+/* Image utilities */
+.section-image {
+  max-width: 20rem;
+}
+
+.primary-image {
+  justify-self: end;
+}
+
+/* Background color utilities */
+.bg-primary {
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
+.bg-secondary {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.bg-light {
+  background-color: var(--light-bg);
+  color: #333;
+}
+
+/* Alerts utilities */
+
+.alert {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.alert-success {
+  background-color: var(--alert-success-color);
+  color: var(--white);
 }
 
 /*===========================
@@ -135,13 +207,6 @@
 ===========================*/
 
 /* Navbar styles begin */
-
-.header {
-  background-color: var(--light-blue);
-  color: var(--white);
-  padding: 1rem 0;
-}
-
 .header .wrapper__container {
   justify-content: space-between;
 }
@@ -160,26 +225,32 @@
 .item__link:hover {
   border-bottom: 0.1rem solid currentColor;
 }
-
 /* Navbar styles end */
 
 /*===========================
 === FOOTER SECTION STYLES ===
 ===========================*/
-
-.footer {
-  background-color: var(--dark-blue );
-  color: var(--white);
-}
-
 .enterprise__heading {
   font-size: 2rem;
 }
 
-.grid-container > .footer__item {
-  justify-self: self-start;
+.navbar__link,
+.social__link {
+  color: var(--white);
 }
 
-.navbar__link, .social__link {
-  color: var(--white);
+.footer__enterprise {
+  justify-self: start;
+}
+
+.footer__navbar {
+  justify-self: center;
+}
+
+.footer__social {
+  justify-self: end;
+}
+
+.footer__social span {
+  padding: 0.5rem;
 }
